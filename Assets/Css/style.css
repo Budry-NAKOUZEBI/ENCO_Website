@@ -1,0 +1,74 @@
+#produits .card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    cursor: pointer;
+}
+
+#produits .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
+}
+
+
+#produits .card .card-img-top {
+    transition: transform 0.5s ease;
+}
+
+#produits .card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+
+section .col-md-4 .rounded-4 {
+    transition: all 0.3s ease-in-out;
+}
+
+
+section .col-md-4 .rounded-4:hover {
+    transform: scale(1.03); 
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 104, 55, 0.2); 
+}
+
+
+.testimonial-img {
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.col-md-4 .rounded-4:hover .testimonial-img {
+    transform: rotate(5deg); 
+    border-color: #f9a825;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#produits .col-md-4, 
+section .col-md-4 {
+    animation: fadeInUp 0.8s ease backwards;
+}
+
+
+#produits .col-md-4:nth-child(1), section .col-md-4:nth-child(1) { animation-delay: 0.1s; }
+#produits .col-md-4:nth-child(2), section .col-md-4:nth-child(2) { animation-delay: 0.3s; }
+#produits .col-md-4:nth-child(3), section .col-md-4:nth-child(3) { animation-delay: 0.5s; }
+
+
+.custom-img img{
+    transition: transform 0.5s ease;
+}
+
+.custom-img img:hover{
+   transform: scale(1.05);
+}
+
+
